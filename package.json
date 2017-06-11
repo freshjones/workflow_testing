@@ -13,8 +13,10 @@
     "node": "6.10.1"
   },
   "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
   "devDependencies": {
-    "express": "^4.15.3",
     "jest": "^20.0.4",
     "selenium-webdriver": "^3.4.0",
     "webpack": "^2.6.1"
