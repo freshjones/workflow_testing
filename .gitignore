@@ -1,4 +1,7 @@
 node_modules
 coverage
 dist
-
+.DS_Store
+/*.env
+chromedriver*
+selenium-server-standalone*
