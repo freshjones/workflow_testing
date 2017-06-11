@@ -7,8 +7,7 @@
     "build:dev": "webpack --progress",
     "test": "yarn test:unit && yarn test:acceptance",
     "test:unit": "jest src/client --coverage",
-    "test:acceptance": "jest __tests__/acceptance/",
-    "postinstall": "yarn build"
+    "test:acceptance": "jest __tests__/acceptance/"
   },
   "engines": {
     "node": "6.10.1"
