@@ -5,7 +5,8 @@
     "start": "node src/server/index.js",
     "build": "webpack -p --progress",
     "build:dev": "webpack --progress",
-    "test": "jest src/client --coverage",
+    "test": "test:unit && test:acceptance",
+    "test:unit": "jest src/client --coverage",
     "test:acceptance": "jest __tests__/acceptance/"
   },
   "license": "MIT",
