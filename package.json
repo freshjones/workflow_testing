@@ -5,7 +5,7 @@
     "start": "node src/server/index.js",
     "build": "webpack -p --progress",
     "build:dev": "webpack --progress",
-    "test": "test:unit && test:acceptance",
+    "test": "yarn test:unit && yarn test:acceptance",
     "test:unit": "jest src/client --coverage",
     "test:acceptance": "jest __tests__/acceptance/"
   },
