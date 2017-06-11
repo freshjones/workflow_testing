@@ -11,6 +11,7 @@ before_script:
   - sleep 5
   - wget http://selenium-release.storage.googleapis.com/3.4/selenium-server-standalone-3.4.0.jar
   - wget https://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip
+  - unzip chromedriver_linux64.zip
   - sudo apt-get install libnss3
   - sudo cp chromedriver /usr/local/bin/.
   - sudo chmod +x /usr/local/bin/chromedriver
@@ -18,3 +19,6 @@ before_script:
   - sleep 5
   - node src/server/index.js > /dev/null &
   - sleep 5
+branches:
+  only:
+    - master
