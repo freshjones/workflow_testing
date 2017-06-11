@@ -4,7 +4,8 @@
   "scripts": {
     "start": "node src/server/index.js",
     "build": "webpack -p --progress",
-    "test:unit": "jest --coverage",
+    "build:dev": "webpack --progress",
+    "test": "jest src/client --coverage",
     "test:acceptance": "jest __tests__/acceptance/"
   },
   "license": "MIT",
