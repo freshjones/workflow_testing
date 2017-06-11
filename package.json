@@ -10,6 +10,9 @@
     "test:acceptance": "jest __tests__/acceptance/",
     "postinstall": "yarn build"
   },
+  "engines": {
+    "node": "6.10.1"
+  },
   "license": "MIT",
   "devDependencies": {
     "express": "^4.15.3",
