@@ -8,7 +8,7 @@ app.use('/static', express.static('dist'))
 app.use("/", function (req, res) {
   const title = 'Hello World'
   const app = 'OK HELLO WORLD'
-  var testSum = sum(5,5)
+  var testSum = sum(5,3)
   const HTML = `
      <!DOCTYPE html>
       <html>
