@@ -4,6 +4,8 @@ dist: trusty
 node_js:
   - "6.10"
 script: yarn test
+addons:
+  chrome: stable
 before_script:
   - "export PATH=$PATH:/usr/lib/chromium-browser/"
   - "export DISPLAY=:99.0"
