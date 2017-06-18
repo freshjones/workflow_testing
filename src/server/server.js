@@ -4,6 +4,8 @@ const app = express();
 
 var sum = require('./../client/sum')
 
+app.use(compression())
+
 app.use('/static', express.static('dist'))
 app.use("/", function (req, res) {
   const title = 'Hello World'
