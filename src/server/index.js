@@ -1,7 +1,7 @@
 var server = require('./server');
 
 const PORT = process.env.PORT || 3000;
-
+/*
 if (process.env.NODE_ENV !== 'production') {
   const webpack = require('webpack')
   const webpackDevMiddleware = require('webpack-dev-middleware')
@@ -15,6 +15,7 @@ if (process.env.NODE_ENV !== 'production') {
     publicPath: config.output.publicPathdist
   }))
 }
+*/
 
 server.listen(PORT, function () {
   console.log('Server listening on', PORT);
