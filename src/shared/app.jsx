@@ -9,7 +9,9 @@ const APP_NAME = 'My App Name'
 const App = function() {
   return (
     <div>
-      <Helmet titleTemplate={`%s | ${APP_NAME}`} defaultTitle={APP_NAME} />
+      <Helmet titleTemplate={`%s | ${APP_NAME}`} defaultTitle={APP_NAME} >
+        <meta charSet="utf-8" />
+      </Helmet>
       <Nav />
       <Switch>
         <Route exact path='/' render={() => <HomePage />} />

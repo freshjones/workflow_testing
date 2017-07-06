@@ -2,9 +2,8 @@
 
 exports[`should be on correct page 1`] = `
 "
-          <div>OK HELLO WORLD: 8</div>
-          <script type=\\"application/javascript\\" src=\\"/static/js/bundle.js\\"></script>
-        
+        <div class=\\"app\\"><div><nav><ul><li><a class=\\"active\\" style=\\"color:limegreen;\\" href=\\"/\\">Home</a></li><li><a href=\\"/other\\">Say Hello</a></li></ul></nav><div><h1>HomePage Mang</h1></div></div></div>
+        <script src=\\"/static/js/bundle.js\\"></script>
       
     "
 `;

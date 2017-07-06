@@ -9,7 +9,7 @@ var driver = new webdriver.Builder().
 
 test('should be on correct page', function (done) {
   
-  driver.get("http://localhost:3000");
+  driver.get("http://localhost:8000");
 
   getTitle()
     .then(assertTitleIsCorrect)
@@ -42,7 +42,7 @@ test('should be on correct page', function (done) {
 
   function assertTitleIsCorrect(title) {
     try{ 
-      expect(title).toBe('Hello World'); 
+      expect(title).toBe('Hello World | My App Name'); 
     }
     catch(e){ 
       console.log(e);  
