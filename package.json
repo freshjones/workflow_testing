@@ -2,23 +2,37 @@
   "name": "scratch",
   "version": "1.0.0",
   "scripts": {
-    "start": "node src/server/index.js",
+    "start": "node lib/server/index.js",
     "build": "webpack -p --progress",
     "build:dev": "webpack --progress",
+    "prod:build": "rimraf lib dist && babel src -d lib --ignore .test.js && webpack -p --progress",
+    "prod:start": "heroku local",
     "test": "yarn test:unit && yarn test:acceptance",
     "test:unit": "jest src/client --coverage",
-    "test:acceptance": "jest __tests__/acceptance/"
+    "test:acceptance": "jest __tests__/acceptance/",
+    "heroku-postbuild": "yarn prod:build"
   },
   "engines": {
-    "node": "6.10.1"
+    "node": "6.10.1",
+    "yarn": "0.21.3"
   },
   "license": "MIT",
   "dependencies": {
     "compression": "^1.6.2",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
     "jest": "^20.0.4",
+    "rimraf": "^2.6.1",
     "selenium-webdriver": "^3.4.0",
     "webpack": "^2.6.1"
   }
