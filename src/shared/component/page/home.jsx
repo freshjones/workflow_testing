@@ -1,7 +1,13 @@
 import React from 'react'
+import Helmet from 'react-helmet'
+const title = 'Hello World'
 const HomePage = function(){
   return (
     <div>
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content="Nested component" />
+      </Helmet>
       <h1>HomePage Mang</h1>
     </div>
   )

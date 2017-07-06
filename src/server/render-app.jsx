@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
+import Helmet from 'react-helmet'
 import { StaticRouter } from 'react-router'
 import App from './../shared/app'
 const renderApp = function(location, plainPartialState, routerContext) {
@@ -9,11 +10,14 @@ const renderApp = function(location, plainPartialState, routerContext) {
       <App />
     </StaticRouter>
   )
+  const head = Helmet.renderStatic();
+
   return (
     `<!doctype html>
     <html>
       <head>
-        <title>Ok corral</title>
+        ${head.title.toString()}
+        ${head.meta.toString()}
       </head>
       <body>
         <div class="app">${HTML}</div>
