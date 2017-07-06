@@ -17,7 +17,7 @@ before_script:
 - sudo cp chromedriver /usr/local/bin/.
 - sudo chmod +x /usr/local/bin/chromedriver
 - java -jar selenium-server-standalone-3.4.0.jar -port 4444 > /dev/null &
-- ./node_modules/babel-cli/bin/babel-node.js src/server
+- ./node_modules/babel-cli/bin/babel-node.js src/server > /dev/null &
 - sleep 5
 deploy:
   provider: heroku

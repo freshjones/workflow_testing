@@ -9,7 +9,7 @@ var driver = new webdriver.Builder().
 
 test('should be on correct page', function (done) {
   
-  driver.get("http://localhost:8000");
+  driver.get("http://localhost:3000");
 
   getTitle()
     .then(assertTitleIsCorrect)
