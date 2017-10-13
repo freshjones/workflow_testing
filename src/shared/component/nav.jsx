@@ -6,8 +6,8 @@ const Nav = function(){
     <nav>
       <ul>
         {[
-          { route: '/', label: 'Home' },
-          { route: '/other', label: 'Say Hello' }
+          { route: '/', label: 'Homepage' },
+          { route: '/other', label: 'Other' }
         ].map(link => (
           <li key={link.route}>
             <NavLink to={link.route} activeStyle={{ color: 'limegreen' }} exact>{link.label}</NavLink>
