@@ -2,7 +2,8 @@
 
 exports[`should be on correct page 1`] = `
 "
-        <div class=\\"saasafari-auth-app\\"><div data-reactroot=\\"\\" data-reactid=\\"1\\" data-react-checksum=\\"-662995952\\"><!-- react-empty: 2 --><nav data-reactid=\\"3\\"><ul data-reactid=\\"4\\"><li data-reactid=\\"5\\"><a class=\\"active\\" style=\\"color:limegreen;\\" href=\\"/\\" data-reactid=\\"6\\">Homepage</a></li><li data-reactid=\\"7\\"><a href=\\"/other\\" data-reactid=\\"8\\">Other</a></li></ul></nav><div data-reactid=\\"9\\"><!-- react-empty: 10 --><h1 data-reactid=\\"11\\">HomePage</h1></div></div></div>
+        <div class=\\"saasafari-auth-app\\"><div data-reactroot=\\"\\" data-reactid=\\"1\\" data-react-checksum=\\"-1642887869\\"><!-- react-empty: 2 --><nav data-reactid=\\"3\\"><ul data-reactid=\\"4\\"><li data-reactid=\\"5\\"><a class=\\"active\\" style=\\"color:limegreen;\\" href=\\"/\\" data-reactid=\\"6\\">Homepage Any</a></li><li data-reactid=\\"7\\"><a href=\\"/other\\" data-reactid=\\"8\\">Other Faster?</a></li></ul></nav><div data-reactid=\\"9\\"><!-- react-empty: 10 --><h1 data-reactid=\\"11\\">HomePage Still Not Fast</h1></div></div></div>
+        <script src=\\"http://localhost:7000/dist/dll/dll.vendor.js\\"></script>
         <script src=\\"http://localhost:7000/dist/js/bundle.js\\"></script>
       
     "
