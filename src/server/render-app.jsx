@@ -24,6 +24,7 @@ const renderApp = function(location, plainPartialState, routerContext) {
       </head>
       <body>
         <div class="${APP_CONTAINER_CLASS}">${HTML}</div>
+        <script src="${isProd ? STATIC_PATH : `http://localhost:${WDS_PORT}/dist`}/dll/dll.vendor.js"></script>
         <script src="${isProd ? STATIC_PATH : `http://localhost:${WDS_PORT}/dist`}/js/bundle.js"></script>
       </body>
     </html>`

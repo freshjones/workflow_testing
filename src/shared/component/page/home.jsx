@@ -8,7 +8,7 @@ const HomePage = function(){
         <title>{title}</title>
         <meta name="description" content="Nested component" />
       </Helmet>
-      <h1>HomePage</h1>
+      <h1>HomePage Still Not Fast</h1>
     </div>
   )
 }
